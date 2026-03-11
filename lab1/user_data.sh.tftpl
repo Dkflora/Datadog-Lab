@@ -70,7 +70,10 @@ services:
     environment:
       DD_API_KEY: "${datadog_api_key}"
       DD_SITE: "us5.datadoghq.com"
-      DD_HOSTNAME: dev1.utrains.org
+      DD_HOSTNAME: "dev1.utrains.org"
+      DD_PROCESS_AGENT_ENABLED: "true"
+      DD_SYSTEM_PROBE_ENABLED: "true"
+      DD_SYSTEM_PROBE_NETWORK_ENABLED: "true"
       DD_APM_ENABLED: "true"
       DD_LOGS_ENABLED: "true"
       DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL: "true"
